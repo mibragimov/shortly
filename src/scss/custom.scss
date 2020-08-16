@@ -1,0 +1,19 @@
+$theme-colors: (
+  'primary': hsl(180, 66%, 49%),
+  'secondary': hsl(0, 87%, 67%),
+  'dark': hsl(257, 27%, 26%),
+  'color-gray': hsl(0, 0%, 75%),
+  'color-gray-violet': #eff1f7,
+  'color-dark-blue': hsl(255, 11%, 22%),
+  'color-dark-violet': hsl(260, 8%, 14%),
+);
+
+// $body-bg: #fff;
+// $body-color: hsl(257, 7%, 63%);
+
+body {
+  height: 100vh;
+  color: hsl(257, 7%, 63%);
+}
+
+@import '../../node_modules/bootstrap/scss/bootstrap';
