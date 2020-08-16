@@ -46,16 +46,39 @@ const StyledDiv = styled.div`
   }
 `;
 
-function Message() {
+interface Props {
+  data: {
+    longUrl: string;
+    shortUrl: string;
+  };
+}
+
+function Message({ data: { longUrl, shortUrl } }: Props) {
+  const [copy, setCopy] = React.useState(false);
+
+  const handleClick = () => {
+    navigator.clipboard.writeText(shortUrl);
+    setCopy(true);
+  };
+
   return (
     <StyledContainer className="bg-white rounded position-relative">
       <StyledDiv>
-        <p className="mr-auto mb-0">https://fjkfjsafak.com</p>
-        <a href="#" className="mr-3">
-          htttps://gsdgl.com
+        <p className="mr-auto mb-0">{longUrl}</p>
+        <a
+          href={shortUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="mr-3 text-decoration-none"
+        >
+          {shortUrl}
         </a>
-        <Button color="primary" className="text-white font-weight-bold px-3">
-          Copy
+        <Button
+          color={copy ? 'dark' : 'primary'}
+          className="text-white font-weight-bold px-3"
+          onClick={handleClick}
+        >
+          {copy ? 'Copied!' : 'Copy'}
         </Button>
       </StyledDiv>
     </StyledContainer>

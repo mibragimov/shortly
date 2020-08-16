@@ -20,7 +20,14 @@ import {
   CardDiv,
 } from './Home.styles';
 
+export type INITIAL_STATE = {
+  longUrl: string;
+  shortUrl: string;
+};
+
 function Home() {
+  const [data, setData] = React.useState<INITIAL_STATE[]>([]);
+
   return (
     <>
       <StyledContainer>
@@ -45,11 +52,13 @@ function Home() {
       </StyledContainer>
       <main className="bg-color-gray-violet">
         <FormContainer>
-          <UrlShortenForm />
+          <UrlShortenForm setData={setData} />
         </FormContainer>
-        <Message />
-        <Message />
-        <Message />
+        {data.length
+          ? data.map((d, idx) => {
+              return <Message data={d} key={idx} />;
+            })
+          : null}
 
         <StyledSection>
           <div className="text-center py-3 mb-5">

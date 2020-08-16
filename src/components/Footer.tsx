@@ -149,6 +149,25 @@ function Footer() {
           </StyledCol>
         </Row>
       </Container>
+      <div style={{ fontSize: '11px' }} className="text-center text-white mt-5">
+        Challenge by{' '}
+        <a
+          href="https://www.frontendmentor.io?ref=challenge"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Frontend Mentor
+        </a>
+        . Coded by{' '}
+        <a
+          href="https://twitter.com/MuhammadIbragi1"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          @mibragimov
+        </a>
+        .<p>16.08.2020</p>
+      </div>
     </Container>
   );
 }
