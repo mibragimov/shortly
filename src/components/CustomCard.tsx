@@ -41,6 +41,7 @@ interface Props {
 function CustomCard(props: Props) {
   const StyledIcon = styled.img.attrs({
     src: props.icon,
+    alt: 'icon',
   })`
     width: 2rem;
     height: 2rem;

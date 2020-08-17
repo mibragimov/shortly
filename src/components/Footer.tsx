@@ -98,7 +98,7 @@ function Footer() {
             lg
             className="d-flex justify-content-center justify-content-lg-between"
           >
-            <StyledLink href="#">
+            <StyledLink href="https://example.com">
               <StyledSvg
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
@@ -110,7 +110,7 @@ function Footer() {
                 />
               </StyledSvg>
             </StyledLink>
-            <StyledLink href="#">
+            <StyledLink href="https://example.com">
               <StyledSvg
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
@@ -122,7 +122,7 @@ function Footer() {
                 />
               </StyledSvg>
             </StyledLink>
-            <StyledLink href="#">
+            <StyledLink href="https://example.com">
               <StyledSvg
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
@@ -134,7 +134,7 @@ function Footer() {
                 />
               </StyledSvg>
             </StyledLink>
-            <StyledLink href="#">
+            <StyledLink href="https://example.com">
               <StyledSvg
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
@@ -149,7 +149,10 @@ function Footer() {
           </StyledCol>
         </Row>
       </Container>
-      <div style={{ fontSize: '11px' }} className="text-center text-white mt-5">
+      <div
+        style={{ fontSize: '11px' }}
+        className="text-center text-white mt-5 mb-0 pb-0"
+      >
         Challenge by{' '}
         <a
           href="https://www.frontendmentor.io?ref=challenge"
@@ -166,7 +169,7 @@ function Footer() {
         >
           @mibragimov
         </a>
-        .<p>16.08.2020</p>
+        .
       </div>
     </Container>
   );

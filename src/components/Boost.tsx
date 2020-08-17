@@ -10,7 +10,7 @@ const StyledDiv = styled.div`
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  height: 12rem;
+  height: 15rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -25,9 +25,7 @@ const StyledDiv = styled.div`
 function Boost() {
   return (
     <StyledDiv className="bg-dark">
-      <h3 className="display-5 text-white font-weight-bold mb-3">
-        Boost your links today
-      </h3>
+      <h3 className="display-4 text-white mb-3">Boost your links today</h3>
       <CustomButton color="primary">Get Started</CustomButton>
     </StyledDiv>
   );

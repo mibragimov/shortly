@@ -5,7 +5,7 @@ import { Home } from './pages/Home';
 
 function App() {
   return (
-    <Container fluid className="overflow-hidden px-0">
+    <Container fluid className="overflow-hidden px-0 pt-4">
       <Container>
         <Header />
       </Container>

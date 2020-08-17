@@ -34,7 +34,7 @@ function Home() {
         <Row>
           <Col lg className="order-1 order-lg-0">
             <div className="d-flex flex-column align-items-center align-items-lg-start">
-              <StyledHeading className="display-4 font-weight-bold text-center text-lg-left">
+              <StyledHeading className="display-3 font-weight-bold text-center text-lg-left">
                 More than just shorter links
               </StyledHeading>
               <p className="text-muted w-75 text-center text-lg-left">
@@ -62,7 +62,7 @@ function Home() {
 
         <StyledSection>
           <div className="text-center py-3 mb-5">
-            <h3 className="display-5 font-weight-bold">Advanced Statistics</h3>
+            <h3 className="display-4">Advanced Statistics</h3>
             <p className="text-muted w-lg-50  px-5 mx-auto">
               Track how your links are performing across the web with our
               advanced statistics dashboard
